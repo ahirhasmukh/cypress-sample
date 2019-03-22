@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
-
+// npx cypress run --record --key d6fbabce-4759-4142-86ec-52eda552ac42
+// npx cyress open
 context('Actions', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/actions')

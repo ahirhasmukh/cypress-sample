@@ -1,5 +1,5 @@
 import {Given, And, Then } from "cypress-cucumber-preprocessor/steps";
-
+import {loginPage} from '../../examples/pages/loginPagesModel';
 Given(`I visit test website`, ()=>{
     cy.visit('/');
 });
@@ -10,7 +10,6 @@ Given(`I clicked login link`, ()=>{
 });
 
 Given(`I login as user {string} and {string}`, (userName, Password)=>{
-    cy.get('input[name="email"]').type(userName);
-    cy.get('input[name="password"]').type(Password, {log: false});
-    cy.contains('LOGIN').click();
+    loginPage.performLogin(userName, Password);
+    loginPage.clickLoginButton();
 });

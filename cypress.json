@@ -1,6 +1,7 @@
 {
-    "video": true,
-    "fixturesFolder":"cypress/fixtures",
-    "screenshotsFolder":"cypress/screenshots",
-    "baseUrl": "http://dev.certif-id.com"
+  "video": true,
+  "fixturesFolder": "cypress/fixtures",
+  "screenshotsFolder": "cypress/screenshots",
+  "baseUrl": "http://dev.certif-id.com",
+  "projectId": "so152z"
 }
